@@ -9,5 +9,9 @@ Rails.application.routes.draw do
 
   get("/movies",{ :controller => "movies", :action => "index"})
 
+  get("/actors", {:controller => "actors", :action => "index"})
+
+  get("actors/:the_id", {:controller => "actors", :action => "show"})
+
   #left off before finishing director filmography - see video @28:00
 end
