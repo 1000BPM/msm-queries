@@ -7,5 +7,7 @@ Rails.application.routes.draw do
 
   get("/movies/:the_id", { :controller => "movies", :action => "show"})
 
+  get("/movies",{ :controller => "movies", :action => "index"})
+
   #left off before finishing director filmography - see video @28:00
 end
